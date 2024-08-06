@@ -1,0 +1,14 @@
+<router-outlet></router-outlet>
+<h1 id="Data"> Student_Details</h1>
+<!-- <form action="/submit-form" method="post"></form> -->
+<label id="name" for="student name">student Name: </label>
+             <input [(ngModel)]="addressName.name" type="text" id="student -name" name="student_name" required/>
+             <br>
+ <label id="city" for="student city">student city:</label>
+             <input [(ngModel)]="addressName.city" type="text" id="student-marks" name="student_marks" required/> 
+             <br>
+ <label  id="mobile" for="student mobile">student mobile: </label>
+             <input [(ngModel)]="addressName.mobile" type="text" id="student-mobile" name="student_mobile" required/> 
+             
+             <br>
+             <button type="button" (click)="createAddress(addressName)">Submit</button>         
